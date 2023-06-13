@@ -1,0 +1,38 @@
+.price-range {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2.125rem;
+}
+
+.price-range__bar {
+    position: relative;
+    width: 17.5rem;
+    height: 2px;
+    background-color: #E2E2E2;
+
+    &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        height: 4px;
+        width: 15rem;
+        background: #9070EC;
+        top: -1px;
+        bottom: 0;
+    }
+}
+
+.price-range__control {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #FFFFFF;
+    border: 2px solid #9070EC;
+    border-radius: 50%;
+    bottom: 22px;
+}
+
+.price-range__control-max {
+    right: 20px;
+}

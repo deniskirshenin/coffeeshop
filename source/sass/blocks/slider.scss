@@ -1,0 +1,106 @@
+.slider {
+    background-color: #F3EBE1;
+    width: 100%;
+}
+
+.slider__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.slider__button {
+    background-color: transparent;
+    border: none;
+    padding: 19.875rem 0;
+}
+
+.slider__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 17.5rem;
+}
+
+.slider__slide-lavender-latte,
+.slider__slide-triple-espresso {
+    display: none;
+}
+
+.slider__badge {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #7859CF;
+}
+
+.slider__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #333333;
+    margin: 0;
+    padding: 4px 0 10px 0;
+}
+
+.slider__text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+    color: #333333;
+    padding-bottom: 1.25rem;
+    margin: 0;
+}
+
+.slider__order-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__old-price {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-decoration-line: line-through;
+    color: #7859CF;
+    margin-right: 0.375rem;
+}
+
+.slider__new-price {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: #333333;
+    margin-right: 1.25rem;
+}
+
+.slider__button-order {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #7859CF;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1.25rem;
+}

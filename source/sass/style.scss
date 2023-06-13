@@ -1,0 +1,18 @@
+/* GLOBAL */
+@import "global/variables";
+@import "global/global";
+@import "global/fonts";
+@import "global/breakpoints.scss";
+
+/* BLOCKS */
+@import "blocks/header";
+@import "blocks/slider.scss";
+@import "blocks/features.scss";
+@import "blocks/feature-card.scss";
+@import "blocks/catalog.scss";
+@import "blocks/catalog-form.scss";
+@import "blocks/price-range.scss";
+@import "blocks/price-input.scss";
+@import "blocks/pagination.scss";
+@import "blocks/map.scss";
+@import "blocks/footer.scss";

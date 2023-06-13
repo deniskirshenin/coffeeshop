@@ -1,0 +1,198 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 17.5rem;
+    border-bottom: 1px solid #F0EBFF;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.footer__socials-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__socials-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.footer__socials-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.footer__ecom-links {
+    display: flex;
+    flex-direction: column;
+    width: 17.5rem;
+    border-bottom: 1px solid #F0EBFF;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.footer__ecom-links-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #7859CF;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.footer__ecom-links-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__ecom-links-link {
+    text-decoration: none;
+}
+
+
+.footer__ecom-links-item {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #333333;
+    padding: 8px 0;
+}
+
+.footer__ecom-links-item:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.footer__media-links {
+    display: flex;
+    flex-direction: column;
+    width: 17.5rem;
+    border-bottom: 1px solid #F0EBFF;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.footer__media-links-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #7859CF;
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+.footer__media-links-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__media-links-link {
+    text-decoration: none;
+}
+
+.footer__media-links-item {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #333333;
+    padding: 8px 0;
+}
+
+.footer__media-links-item:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    width: 17.5rem;
+    border-bottom: 1px solid #F0EBFF;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.footer__contacts-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #7859CF;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.footer__contacts-address {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    padding-left: 19px;
+    background-image: url("../../img/Icons&Logo/Address.svg");
+    background-repeat: no-repeat;
+    background-position: left 0;
+}
+
+.footer__contacts-phone {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    text-decoration: none;
+    padding-left: 19px;
+    background-image: url("../../img/Icons&Logo/Phone.svg");
+    background-repeat: no-repeat;
+    background-position: top 2px left 0;
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 30px 0;
+    margin: 0 auto;
+}
+
+.footer__copyright-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #BDBDBD;
+    text-decoration: none;
+    margin-right: 4px;
+}

@@ -1,0 +1,120 @@
+.catalog {
+    background-color: #F8F8F8;
+    width: 100%;
+}
+
+.catalog__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 17.5rem;
+    padding: 3.125rem 1.25rem 2.75rem 1.25rem;
+    margin: 0 auto;
+}
+
+.catalog__badge {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #7859CF;
+    padding-bottom: 0.25rem;
+}
+
+.catalog__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    text-align: center;
+    color: #333333;
+    margin: 0;
+    padding-bottom: 1.25rem;
+}
+
+.catalog__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.catalog__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.catalog__item-image {
+    padding: 20px 75px 24px 75px;
+}
+
+.catalog__item-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2rem;
+    text-align: left;
+    color: #333333;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0 20px 4px 20px;
+}
+
+.catalog__item-text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0 20px 18px 20px;
+}
+
+.catalog__item-buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog__item-price {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 2rem;
+    color: #333333;
+}
+
+.catalog__item-button-buy {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 8px 20px 8px 46px;
+    background-color: #7859CF;
+    border: none;
+    border-radius: 4px;
+    background-image: url('../../img/basket.svg');
+    background-repeat: no-repeat;
+    background-position: top 10px left 20px;
+    margin-left: 50px;
+}

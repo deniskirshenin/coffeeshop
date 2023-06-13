@@ -1,0 +1,32 @@
+.price-input__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-input__container::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 8px;
+    border-radius: 0px;
+    background-color: #BDBDBD;
+    left: 136px;
+}
+
+.price-input__value {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #BDBDBD;
+    padding: 0.5rem 0.625rem;
+    background-color: #FFFFFF;
+    border: 2px solid #9070EC;
+    border-radius: 4px;
+    width: 98px;
+}
+

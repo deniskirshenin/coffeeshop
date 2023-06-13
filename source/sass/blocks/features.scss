@@ -1,0 +1,39 @@
+.features {
+    background-color: #fff;
+    width: 100%;
+}
+
+.features__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 17.5rem;
+    margin: 0 auto;
+    padding: 3.125rem 1.25rem 1.75rem 1.25rem; 
+}
+
+.features__badge {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #7859CF;
+    padding-bottom: 4px;
+}
+
+.features__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    text-align: center;
+    color: #333333;
+    padding-bottom: 36px;
+    margin: 0;
+}
