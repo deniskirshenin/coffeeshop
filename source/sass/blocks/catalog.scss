@@ -1,6 +1,7 @@
 .catalog {
     background-color: #F8F8F8;
     width: 100%;
+    margin: 0 auto;
 }
 
 .catalog__wrapper {
@@ -11,6 +12,22 @@
     width: 17.5rem;
     padding: 3.125rem 1.25rem 2.75rem 1.25rem;
     margin: 0 auto;
+
+    @media (min-width: $tablet) {
+        width: 45.5rem;
+        padding: 80px 20px 90px 20px;
+    }
+
+    @media (min-width: $desktop) {
+        display: grid;
+        grid-template-areas: "badge badge"
+        "title title"
+        "form sort"
+        "form catalog"
+        "pagination pagination";
+        width: 85rem;
+        padding: 100px 40px 120px 40px;
+    }
 }
 
 .catalog__badge {
@@ -23,6 +40,11 @@
     text-transform: uppercase;
     color: #7859CF;
     padding-bottom: 0.25rem;
+
+    @media (min-width: $desktop) {
+        grid-area: badge;
+        text-align: center;
+    }
 }
 
 .catalog__title {
@@ -35,6 +57,19 @@
     color: #333333;
     margin: 0;
     padding-bottom: 1.25rem;
+
+    @media (min-width: $tablet) {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 64px;
+    }
+
+    @media (min-width: $desktop) {
+        grid-area: title;
+        text-align: center;
+        padding-bottom: 40px;
+    }
 }
 
 .catalog__list {
@@ -45,6 +80,19 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    @media (min-width: $tablet) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    @media (min-width: $desktop) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        grid-area: catalog;
+    }
 }
 
 .catalog__item {
@@ -56,10 +104,23 @@
     border-radius: 4px;
     padding: 20px 0;
     margin-bottom: 20px;
+
+    @media (min-width: $tablet) {
+        padding: 50px 30px 30px 30px;
+        margin: 0;
+    }
 }
 
 .catalog__item-image {
     padding: 20px 75px 24px 75px;
+
+    @media (min-width: $tablet) {
+        padding: 0 0 50px 0;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 0 0 30px 0;
+    }
 }
 
 .catalog__item-title {
@@ -73,6 +134,12 @@
     align-self: flex-start;
     margin: 0;
     padding: 0 20px 4px 20px;
+
+    @media (min-width: $tablet) {
+        font-size: 24px;
+        line-height: 36px;
+        padding: 0 0 10px 0;
+    }
 }
 
 .catalog__item-text {
@@ -85,6 +152,12 @@
     align-self: flex-start;
     margin: 0;
     padding: 0 20px 18px 20px;
+
+    @media (min-width: $tablet) {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 0 20px 0;
+    }
 }
 
 .catalog__item-buy {
@@ -117,4 +190,12 @@
     background-repeat: no-repeat;
     background-position: top 10px left 20px;
     margin-left: 50px;
+
+    @media (min-width: $tablet) {
+        margin-left: 97px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-left: 66px;
+    }
 }

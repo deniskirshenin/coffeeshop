@@ -15,24 +15,29 @@
       <nav class="header__nav">
         <a class="header__logo" href="/">
           <picture>
-            <source media="(min-width: 1440px)" srcset="./img/logo-desktop.png">
-            <source media="(min-width: 768px)" srcset="./img/logo-tablet.png">
+            <source media="(min-width: 1440px)" srcset="./img/logo-desktop.png" width="170" height="36">
+            <source media="(min-width: 768px)" srcset="./img/logo-tablet.png" width="82" height="36">
             <img src="./img/logo-mobile.png" srcset="./img/logo-mobile.png 2x" alt="Лого Coffee2Go" width="32" height="36">
           </picture>
+          <span class="header__logo-text">Интернет-магазин кофейных напитков</span>
         </a>
         <div class="header__nav-user">
           <ul class="header__nav-user-list">
             <li class="header__nav-user-item-account">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6667 4C10.6667 5.47276 9.47276 6.66667 8 6.66667C6.52724 6.66667 5.33333 5.47276 5.33333 4C5.33333 2.52724 6.52724 1.33333 8 1.33333C9.47276 1.33333 10.6667 2.52724 10.6667 4ZM12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4ZM3.19673 12.3102C4.43611 11.2774 6.1613 10.6667 8 10.6667C9.8387 10.6667 11.5639 11.2774 12.8033 12.3102C14.0354 13.337 14.6667 14.6719 14.6667 16H16C16 14.2321 15.1573 12.5363 13.6569 11.286C12.1566 10.0357 10.1218 9.33333 8 9.33333C5.87821 9.33333 3.8434 10.0357 2.34315 11.286C0.842686 12.5363 0 14.2321 0 16L1.33333 16C1.33333 14.6719 1.96465 13.337 3.19673 12.3102Z" fill="#333333"/>
-              </svg>
-              <span class="header__nav-user-account-text">Войти</span>              
+              <a href="/">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6667 4C10.6667 5.47276 9.47276 6.66667 8 6.66667C6.52724 6.66667 5.33333 5.47276 5.33333 4C5.33333 2.52724 6.52724 1.33333 8 1.33333C9.47276 1.33333 10.6667 2.52724 10.6667 4ZM12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4ZM3.19673 12.3102C4.43611 11.2774 6.1613 10.6667 8 10.6667C9.8387 10.6667 11.5639 11.2774 12.8033 12.3102C14.0354 13.337 14.6667 14.6719 14.6667 16H16C16 14.2321 15.1573 12.5363 13.6569 11.286C12.1566 10.0357 10.1218 9.33333 8 9.33333C5.87821 9.33333 3.8434 10.0357 2.34315 11.286C0.842686 12.5363 0 14.2321 0 16L1.33333 16C1.33333 14.6719 1.96465 13.337 3.19673 12.3102Z" fill="#333333"/>
+                </svg>
+                <span class="header__nav-user-account-text">Войти</span> 
+              </a>             
             </li>
             <li class="header__nav-user-item-account">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.66091 3.87546L5.89351 6.66667H10.1065L10.3391 3.87546C10.4531 2.50699 9.37321 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546ZM11.4444 6.66667L11.6678 3.98618C11.8466 1.84036 10.1533 0 8 0C5.84674 0 4.15336 1.84036 4.33218 3.98618L4.55556 6.66667H1.34687H0L0.190476 8L1.00626 13.7105C1.19393 15.0242 2.31905 16 3.64612 16H12.3539C13.6809 16 14.8061 15.0242 14.9937 13.7105L15.8095 8L16 6.66667H14.6531H11.4444ZM11.3333 8H11.2801L11.0579 10.6667H14.0817L14.4627 8H11.3333ZM9.94213 8H6.05787L6.28009 10.6667H9.71991L9.94213 8ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM10.9468 12L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219L13.8912 12H10.9468ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324Z" fill="#333333"/>
-              </svg>    
-              <span class="header__nav-user-account-text">Корзина</span>                           
+              <a href="/">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.66091 3.87546L5.89351 6.66667H10.1065L10.3391 3.87546C10.4531 2.50699 9.37321 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546ZM11.4444 6.66667L11.6678 3.98618C11.8466 1.84036 10.1533 0 8 0C5.84674 0 4.15336 1.84036 4.33218 3.98618L4.55556 6.66667H1.34687H0L0.190476 8L1.00626 13.7105C1.19393 15.0242 2.31905 16 3.64612 16H12.3539C13.6809 16 14.8061 15.0242 14.9937 13.7105L15.8095 8L16 6.66667H14.6531H11.4444ZM11.3333 8H11.2801L11.0579 10.6667H14.0817L14.4627 8H11.3333ZM9.94213 8H6.05787L6.28009 10.6667H9.71991L9.94213 8ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM10.9468 12L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219L13.8912 12H10.9468ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324Z" fill="#333333"/>
+                </svg>    
+                <span class="header__nav-user-account-text">Корзина</span>  
+              </a>                       
             </li>
           </ul>
         </div>
@@ -48,10 +53,10 @@
             </svg>
           </button>
           <ul class="header__nav-menu-list">
-            <li class="header__nav-menu-item">Главная</li>
-            <li class="header__nav-menu-item">Каталог</li>
-            <li class="header__nav-menu-item">Доставка</li>
-            <li class="header__nav-menu-item">О нас</li>
+            <li class="header__nav-menu-item header__nav-menu-item--current"><a class="header__nav-menu-link" href="/">Главная</a></li>
+            <li class="header__nav-menu-item"><a class="header__nav-menu-link" href="/">Каталог</a> </li>
+            <li class="header__nav-menu-item"><a class="header__nav-menu-link" href="/">Доставка</a> </li>
+            <li class="header__nav-menu-item"><a class="header__nav-menu-link" href="/">О нас</a></li>
           </ul>
         </div>
       </nav>
@@ -66,9 +71,9 @@
           </svg>
         </button>
         <article class="slider__slide slider__slide-flat-white">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="./img/flat-white-img-desktop.jpg">
-            <source media="(min-width: 768px)" srcset="./img/flat-white-img-tablet.jpg">
+          <picture class="slider__image">
+            <source media="(min-width: 1440px)" srcset="./img/flat-white-img-desktop.png" width="600" height="600">
+            <source media="(min-width: 768px)" srcset="./img/flat-white-img-tablet.png">
             <img src="./img/flat-white-img-mobile.png" srcset="./img/flat-white-img-mobile.png 2x" alt="Flat White" width="280" height="280">
           </picture>
           <small class="slider__badge">Новинка!</small>
@@ -79,7 +84,6 @@
             <span class="slider__new-price">225₽</span>
             <button class="slider__button-order">Заказать</button>
           </div>
-          
         </article>
         <article class="slider__slide slider__slide-lavender-latte">
           <picture>
@@ -116,6 +120,11 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M6.28339 0L5 1.32082L13.4332 10L5 18.6792L6.28339 20L16 10L6.28339 0Z" fill="#7859CF"/>
           </svg>
         </button>
+        </div>
+        <div class="slider__steps-wrapper">
+          <span class="slider__step slider__step--current"></span>
+          <span class="slider__step"></span>
+          <span class="slider__step"></span>
         </div>
       </section>
       <section class="features">
@@ -234,8 +243,10 @@
                   </li>
                 </ul>
             </fieldset>
-            <button class="catalog-form__button-submit" type="submit">Применить</button>
-            <button class="catalog-form__button-reset" type="reset">Сбросить</button>
+            <div class="catalog-form__button-wrapper">
+              <button class="catalog-form__button-submit" type="submit">Применить</button>
+              <button class="catalog-form__button-reset" type="reset">Сбросить</button>
+            </div> 
           </form>
           <div class="catalog-form__sort">
             <label class="catalog-form__sort-label" for="sort">
@@ -333,8 +344,12 @@
     <footer class="footer">
       <section class="footer__socials">
         <a href="/">
-          <img class="footer__logo" src="./img/logo-tablet.png" alt="лого" width="82" height="36">
+          <picture>
+            <source srcset="./img/logo-desktop.png" width="170" height="36">
+            <img class="footer__logo" src="./img/logo-tablet.png" alt="лого" width="82" height="36">
+          </picture>
         </a>
+        <small class="footer__small-text">Интернет-магазин кофейных напитков</small>
         <ul class="footer__socials-list">
           <li class="footer__socials-item">
             <a href="/">
@@ -365,18 +380,10 @@
       <section class="footer__ecom-links">
         <h3 class="footer__ecom-links-title">Интернет-магазин</h3>
         <ul class="footer__ecom-links-list">
-          <a class="footer__ecom-links-link" href="/">
-            <li class="footer__ecom-links-item">Каталог</li>
-          </a>
-          <a class="footer__ecom-links-link" href="/">
-            <li class="footer__ecom-links-item">Доставка</li>
-          </a>
-          <a class="footer__ecom-links-link" href="/">
-            <li class="footer__ecom-links-item">Способы оплаты</li>
-          </a>
-          <a class="footer__ecom-links-link" href="/">
-            <li class="footer__ecom-links-item">О нас</li>
-          </a>
+          <li class="footer__ecom-links-item"><a class="footer__ecom-links-link" href="/">Каталог</a></li>
+          <li class="footer__ecom-links-item"><a class="footer__ecom-links-link" href="/">Доставка</a></li>
+          <li class="footer__ecom-links-item"><a class="footer__ecom-links-link" href="/">Способы оплаты</a></li>
+          <li class="footer__ecom-links-item"><a class="footer__ecom-links-link" href="/">О нас</a></li>
         </ul>
       </section>
       <section class="footer__media-links">

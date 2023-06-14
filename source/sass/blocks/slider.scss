@@ -1,7 +1,19 @@
 .slider {
     background-color: #F3EBE1;
     width: 100%;
+    margin: 0 auto;
+    
+
+    @media (min-width: $tablet) {
+        background: linear-gradient(to bottom, #F3EBE1 77%, #FFFFFF 23%);
+    }
+
+    @media (min-width: $desktop) {
+        position: relative;
+        background: #F3EBE1;
+    }
 }
+
 
 .slider__wrapper {
     display: flex;
@@ -12,6 +24,14 @@
     background-color: transparent;
     border: none;
     padding: 19.875rem 0;
+
+    @media (min-width: $tablet) {
+        padding: 19.375rem 1.875rem;
+    }
+
+    @media (min-width: $tablet) {
+        padding: 347px 30px;
+    }
 }
 
 .slider__slide {
@@ -20,6 +40,21 @@
     justify-content: center;
     align-items: center;
     width: 17.5rem;
+
+    @media (min-width: $tablet) {
+        width: 38rem;
+        justify-content: flex-start;
+    }
+
+    @media (min-width: $desktop) {
+        display: grid;
+        grid-template-areas: "img badge"
+        "img title"
+        "img text"
+        "img price";
+        width: 80rem;
+        height: 100%;
+    }
 }
 
 .slider__slide-lavender-latte,
@@ -37,6 +72,17 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #7859CF;
+
+    @media (min-width: $tablet) {
+        order: 1;
+        padding-top: 60px;
+    }
+
+    @media (min-width: $desktop) {
+        text-align: left;
+        grid-area: badge;
+        padding-top: 180px;
+    }
 }
 
 .slider__title {
@@ -50,6 +96,21 @@
     color: #333333;
     margin: 0;
     padding: 4px 0 10px 0;
+
+    @media (min-width: $tablet) {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 5rem;
+        order: 2;
+        padding-top: 0;
+        padding-bottom: 16px;
+    }
+
+    @media (min-width: $desktop) {
+        text-align: left;
+        grid-area: title;
+        padding: 4px 0 16px 0;
+    }
 }
 
 .slider__text {
@@ -62,12 +123,51 @@
     color: #333333;
     padding-bottom: 1.25rem;
     margin: 0;
+
+    @media (min-width: $tablet) {
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        order: 3;
+        padding-bottom: 1.25rem;
+    }
+
+    @media (min-width: $desktop) {
+        text-align: left;
+        font-size: 20px;
+        line-height: 32px;
+        grid-area: text;
+        padding-bottom: 40px;
+    }
+}
+
+.slider__image {
+    @media (min-width: $tablet) {
+        order: 5;
+    }
+
+    @media (min-width: $desktop) {
+        width: 600px;
+        height: 600px;
+        padding: 30px 30px 0 25px;
+        grid-area: img;
+    }
 }
 
 .slider__order-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: $tablet) {
+        order: 4;
+    }
+
+    @media (min-width: $desktop) {
+        grid-area: price;
+        margin-bottom: 158px;
+        margin-right: auto;
+    }
 }
 
 .slider__old-price {
@@ -103,4 +203,33 @@
     border: none;
     border-radius: 4px;
     padding: 0.5rem 1.25rem;
+}
+
+
+
+.slider__steps-wrapper {
+    @media (max-width: $desktop) {
+        display: none;
+    }
+
+    @media (min-width: $desktop) {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 210px;
+        margin: 0 auto;
+        bottom: 60px;
+        left: 43%;
+    }
+}
+
+.slider__step {
+    width: 62px;
+    height: 4px;
+    background-color: #FFFFFF;
+}
+
+.slider__step--current {
+    background-color: #7859CF;
 }

@@ -3,6 +3,14 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 2.125rem;
+
+    @media (min-width: $tablet) {
+        width: 13.875rem;
+    }
+
+    @media (min-width: $desktop) {
+        width: 19.875rem;
+    }
 }
 
 .price-range__bar {
@@ -21,6 +29,30 @@
         top: -1px;
         bottom: 0;
     }
+
+    @media (min-width: $tablet) {
+        width: 13.875rem;
+
+        &::before {
+            position: absolute;
+            content: "";
+            display: block;
+            height: 4px;
+            width: 11rem;
+            background: #9070EC;
+            top: -1px;
+            bottom: 0;
+        }
+    }
+
+    @media (min-width: $desktop) {
+        width: 19.875rem;
+        
+        &::before {
+            width: 17.125rem;
+        }
+    }
+    
 }
 
 .price-range__control {

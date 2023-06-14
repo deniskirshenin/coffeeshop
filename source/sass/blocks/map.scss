@@ -6,8 +6,20 @@
 .map__image {
     display: flex;
     padding-top: 12px;
+
+    @media (min-width: $tablet) {
+        padding: 0;
+    }
 }
 
 .map__image-nojs {
     width: 100%;
+
+    @media (min-width: $tablet) {
+        height: 480px;
+    }
+
+    @media (min-width: $desktop) {
+        height: 540px;
+    }
 }
