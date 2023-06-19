@@ -1,0 +1,56 @@
+.catalog-sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet) {
+    width: 282px;
+    align-self: self-end;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-area: sort;
+    margin-left: auto;
+  }
+}
+
+.catalog-sort__label {
+  position: relative;
+  font-family: 'Montserrat', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #333333;
+
+
+}
+
+.catalog-sort__select {
+  display: inline-block;
+  font-family: 'Montserrat', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #7859CF;
+  border: none;
+  background-color: transparent;
+  width: 10.3rem;
+  appearance: none;
+  padding: 4px 15px;
+  box-sizing: border-box;
+  background: url("../../img/arrow-down.png") no-repeat top 14px right 6px;
+
+  &:hover,
+  &:focus {
+    background-color: #F0EBFF;
+  }
+
+  &:active {
+    background-color: transparent;
+    background: url("../../img/arrow-up.png") no-repeat top 12px right 6px;
+  }
+}

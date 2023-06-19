@@ -1,48 +1,63 @@
-.price-input__container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.price-input {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.price-input__container::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 8px;
-    border-radius: 0px;
-    background-color: #BDBDBD;
-    left: 136px;
+.price-input::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 8px;
+  border-radius: 0px;
+  background-color: #BDBDBD;
+  left: 136px;
 
-    @media (min-width: $tablet) {
-        left: 110px;
-    }
+  @media (min-width: $tablet) {
+    left: 110px;
+  }
 
-    @media (min-width: $desktop) {
-        left: 156px;
-    }
+  @media (min-width: $desktop) {
+    left: 156px;
+  }
 }
 
 .price-input__value {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
+  font-family: 'Montserrat', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #BDBDBD;
+  padding: 0.5rem;
+  background-color: #FFFFFF;
+  border: 2px solid #9070EC;
+  border-radius: 4px;
+  width: 96px;
+  height: 20px;
+
+  @media (min-width: $tablet) {
+    width: 67px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 114px;
+  }
+
+  &:hover,
+  &:focus {
+    border: 2px solid #593CAC;
+    color: #333333;
+  }
+
+  &:active {
+    color: #333333;
+  }
+
+  &:disabled {
+    border: 2px solid #E2E2E2;
     color: #BDBDBD;
-    padding: 0.5rem 0.625rem;
-    background-color: #FFFFFF;
-    border: 2px solid #9070EC;
-    border-radius: 4px;
-    width: 98px;
-
-    @media (min-width: $tablet) {
-        width: 67px;
-    }
-
-    @media (min-width: $desktop) {
-        width: 114px;
-    }
+  }
 }
-

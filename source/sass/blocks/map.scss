@@ -1,25 +1,39 @@
 .map {
-    width: 100%;
-    background-color: #E5E5E5;
+  width: 100%;
+  background-color: #E5E5E5;
 }
 
-.map__image {
-    display: flex;
-    padding-top: 12px;
-
-    @media (min-width: $tablet) {
-        padding: 0;
-    }
+.map__interactive {
+  display: none;
 }
 
-.map__image-nojs {
-    width: 100%;
+.map__interactive--active {
+  display: block;
+  height: 420px;
 
-    @media (min-width: $tablet) {
-        height: 480px;
-    }
+  @media (min-width: $tablet) {
+    height: 480px;
+  }
 
-    @media (min-width: $desktop) {
-        height: 540px;
-    }
+  @media (min-width: $desktop) {
+    height: 540px;
+  }
+}
+
+.map__static {
+  display: none;
+}
+
+.map__static--nojs {
+  display: block;
+  margin: 0 auto;
+  height: 420px;
+
+  @media (min-width: $tablet) {
+    height: 480px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 540px;
+  }
 }

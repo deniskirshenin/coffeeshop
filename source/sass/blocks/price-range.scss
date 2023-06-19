@@ -1,70 +1,100 @@
 .price-range {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 2.125rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2.125rem;
 
-    @media (min-width: $tablet) {
-        width: 13.875rem;
-    }
+  @media (min-width: $tablet) {
+    width: 13.875rem;
+  }
 
-    @media (min-width: $desktop) {
-        width: 19.875rem;
-    }
+  @media (min-width: $desktop) {
+    width: 19.875rem;
+  }
 }
 
 .price-range__bar {
-    position: relative;
-    width: 17.5rem;
-    height: 2px;
-    background-color: #E2E2E2;
+  position: relative;
+  height: 2px;
+  background-color: #E2E2E2;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 4px;
+    width: 15rem;
+    background: #9070EC;
+    top: -1px;
+    bottom: 0;
+
+    &:disabled {
+      background-color: #E2E2E2;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: 13.875rem;
 
     &::before {
-        position: absolute;
-        content: "";
-        display: block;
-        height: 4px;
-        width: 15rem;
-        background: #9070EC;
-        top: -1px;
-        bottom: 0;
+      position: absolute;
+      content: "";
+      display: block;
+      height: 4px;
+      width: 11rem;
+      background: #9070EC;
+      top: -1px;
+      bottom: 0;
     }
+  }
 
-    @media (min-width: $tablet) {
-        width: 13.875rem;
+  @media (min-width: $desktop) {
+    width: 19.875rem;
 
-        &::before {
-            position: absolute;
-            content: "";
-            display: block;
-            height: 4px;
-            width: 11rem;
-            background: #9070EC;
-            top: -1px;
-            bottom: 0;
-        }
+    &::before {
+      width: 17.125rem;
     }
+  }
 
-    @media (min-width: $desktop) {
-        width: 19.875rem;
-        
-        &::before {
-            width: 17.125rem;
-        }
-    }
-    
 }
 
 .price-range__control {
+  position: absolute;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: #FFFFFF;
+  border: 2px solid #9070EC;
+  border-radius: 50%;
+  bottom: 22px;
+
+  &::before {
+    content: "";
     position: absolute;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: #FFFFFF;
-    border: 2px solid #9070EC;
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    left: 3px;
     border-radius: 50%;
-    bottom: 22px;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: rgba(120, 89, 207, 0.25);
+  }
+
+  &:active {
+    border: 2px solid #7859CF;
+
+    &::before {
+      background-color: #7859CF;
+    }
+  }
+
+  &:disabled {
+    border: 2px solid #BDBDBD;
+  }
 }
 
 .price-range__control-max {
-    right: 20px;
+  right: 20px;
 }

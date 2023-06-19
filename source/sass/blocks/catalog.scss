@@ -1,201 +1,219 @@
 .catalog {
-    background-color: #F8F8F8;
-    width: 100%;
-    margin: 0 auto;
+  background-color: #F8F8F8;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .catalog__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 17.5rem;
-    padding: 3.125rem 1.25rem 2.75rem 1.25rem;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 17.5rem;
+  padding: 50px 20px 56px 20px;
+  margin: 0 auto;
 
-    @media (min-width: $tablet) {
-        width: 45.5rem;
-        padding: 80px 20px 90px 20px;
-    }
+  @media (min-width: $tablet) {
+    width: 45.5rem;
+    padding: 80px 20px 90px 20px;
+  }
 
-    @media (min-width: $desktop) {
-        display: grid;
-        grid-template-areas: "badge badge"
-        "title title"
-        "form sort"
-        "form catalog"
-        "pagination pagination";
-        width: 85rem;
-        padding: 100px 40px 120px 40px;
-    }
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-areas: "badge badge"
+      "title title"
+      "form sort"
+      "form catalog"
+      "pagination pagination";
+    width: 85rem;
+    padding: 100px 40px 120px 40px;
+  }
 }
 
 .catalog__badge {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #7859CF;
-    padding-bottom: 0.25rem;
+  font-family: 'Montserrat', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #7859CF;
+  padding-bottom: 0.25rem;
+  word-wrap: break-word;
+  text-align: center;
 
-    @media (min-width: $desktop) {
-        grid-area: badge;
-        text-align: center;
-    }
+  @media (min-width: $desktop) {
+    grid-area: badge;
+    text-align: center;
+  }
 }
 
 .catalog__title {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  text-align: center;
+  color: #333333;
+  margin: 0;
+  padding-bottom: 1.25rem;
+
+  @media (min-width: $tablet) {
     font-style: normal;
     font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 2.25rem;
+    font-size: 42px;
+    line-height: 64px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-area: title;
     text-align: center;
-    color: #333333;
-    margin: 0;
-    padding-bottom: 1.25rem;
-
-    @media (min-width: $tablet) {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 42px;
-        line-height: 64px;
-    }
-
-    @media (min-width: $desktop) {
-        grid-area: title;
-        text-align: center;
-        padding-bottom: 40px;
-    }
+    padding-bottom: 40px;
+  }
 }
 
 .catalog__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
 
-    @media (min-width: $tablet) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-    }
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
 
-    @media (min-width: $desktop) {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-        grid-area: catalog;
-    }
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    grid-area: catalog;
+  }
 }
 
 .catalog__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-    border-radius: 4px;
-    padding: 20px 0;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  padding: 20px 0;
+  margin-bottom: 20px;
 
-    @media (min-width: $tablet) {
-        padding: 50px 30px 30px 30px;
-        margin: 0;
-    }
+  @media (min-width: $tablet) {
+    padding: 50px 30px 30px 30px;
+    margin: 0;
+  }
 }
 
 .catalog__item-image {
-    padding: 20px 75px 24px 75px;
+  padding: 20px 75px 24px 75px;
 
-    @media (min-width: $tablet) {
-        padding: 0 0 50px 0;
-    }
+  @media (min-width: $tablet) {
+    padding: 0 0 32px 0;
+  }
 
-    @media (min-width: $desktop) {
-        padding: 0 0 30px 0;
-    }
+  @media (min-width: $desktop) {
+    padding: 0 0 30px 0;
+  }
 }
 
 .catalog__item-title {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2rem;
-    text-align: left;
-    color: #333333;
-    align-self: flex-start;
-    margin: 0;
-    padding: 0 20px 4px 20px;
+  font-family: 'Montserrat', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2rem;
+  text-align: left;
+  color: #333333;
+  align-self: flex-start;
+  margin: 0;
+  padding: 0 20px 4px 20px;
 
-    @media (min-width: $tablet) {
-        font-size: 24px;
-        line-height: 36px;
-        padding: 0 0 10px 0;
-    }
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 36px;
+    padding: 0 0 10px 0;
+  }
 }
 
 .catalog__item-text {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
+  font-family: 'Montserrat', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  align-self: flex-start;
+  margin: 0;
+  padding: 0 20px 16px 20px;
+
+  @media (min-width: $tablet) {
     font-size: 14px;
     line-height: 20px;
-    color: #333333;
-    align-self: flex-start;
-    margin: 0;
-    padding: 0 20px 18px 20px;
-
-    @media (min-width: $tablet) {
-        font-size: 14px;
-        line-height: 20px;
-        padding: 0 0 20px 0;
-    }
+    padding: 0 0 19px 0;
+  }
 }
 
 .catalog__item-buy {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .catalog__item-price {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 2rem;
-    color: #333333;
+  font-family: 'Montserrat', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 2rem;
+  color: #333333;
+  word-break: break-word;
 }
 
 .catalog__item-button-buy {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #FFFFFF;
-    padding: 8px 20px 8px 46px;
-    background-color: #7859CF;
-    border: none;
-    border-radius: 4px;
-    background-image: url('../../img/basket.svg');
-    background-repeat: no-repeat;
-    background-position: top 10px left 20px;
-    margin-left: 50px;
+  font-family: 'Montserrat', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding: 8px 20px 8px 46px;
+  background-color: #7859CF;
+  border: none;
+  border-radius: 4px;
+  background-image: url('../../img/icons/stack.svg#basket');
+  background-repeat: no-repeat;
+  background-size: 20px 16px;
+  background-position: top 10px left 20px;
+  margin-left: 50px;
 
-    @media (min-width: $tablet) {
-        margin-left: 97px;
-    }
+  &:hover,
+  &:focus {
+    background-color: #9070EC;
+  }
 
-    @media (min-width: $desktop) {
-        margin-left: 66px;
-    }
+  &:active {
+    background-color: #593CAC;
+  }
+
+  &:disabled {
+    background-color: #BDBDBD;
+  }
+
+  @media (min-width: $tablet) {
+    margin-left: 97px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 66px;
+  }
 }
