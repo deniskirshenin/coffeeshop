@@ -92,7 +92,6 @@
 
 .slider__badge {
   display: block;
-  font-family: 'Montserrat', "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 0.75rem;
@@ -118,7 +117,6 @@
 }
 
 .slider__title {
-  font-family: 'Montserrat', "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.25rem;
@@ -146,7 +144,6 @@
 }
 
 .slider__text {
-  font-family: 'Montserrat', "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
@@ -228,7 +225,6 @@
 }
 
 .slider__old-price {
-  font-family: 'Montserrat', "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -239,7 +235,6 @@
 }
 
 .slider__new-price {
-  font-family: 'Montserrat', "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 1.25rem;
@@ -249,7 +244,7 @@
 }
 
 .slider__button-order {
-  font-family: 'Montserrat', "Arial", sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -260,6 +255,7 @@
   border: none;
   border-radius: 4px;
   padding: 0.5rem 1.25rem;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -276,6 +272,7 @@
 }
 
 .slider__button {
+  font-family: inherit;
   position: absolute;
   width: 20px;
   height: 20px;
@@ -284,6 +281,7 @@
   border: none;
   padding: 19.875rem 0;
   margin: 0;
+  cursor: pointer;
 
   @media (min-width: $tablet) {
     padding: 19.375rem 1.875rem;
@@ -311,6 +309,7 @@
 }
 
 .slider .slider__button-prev {
+  cursor: pointer;
   left: 0;
 
   @media (min-width: $tablet) {

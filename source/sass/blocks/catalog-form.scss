@@ -318,7 +318,7 @@
 .catalog-form__button-submit {
   display: inline-block;
   min-height: 24px;
-  font-family: 'Montserrat', "Arial", sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -331,7 +331,7 @@
   padding: 8px 91px;
   margin-bottom: 20px;
   word-break: break-word;
-
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -363,7 +363,7 @@
 }
 
 .catalog-form__button-reset {
-  font-family: 'Montserrat', "Arial", sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -376,6 +376,7 @@
   padding: 8px 91px;
   margin-bottom: 36px;
   word-break: break-word;
+  cursor: pointer;
 
   &:hover,
   &:focus {

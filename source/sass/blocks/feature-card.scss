@@ -26,7 +26,7 @@
   }
 }
 
-.feature-card__speed::after {
+.feature-card--speed::after {
   content: "";
   position: absolute;
   width: 52px;
@@ -45,7 +45,7 @@
   }
 }
 
-.feature-card__convenience::after {
+.feature-card--convenience::after {
   content: "";
   position: absolute;
   width: 52px;
@@ -65,7 +65,7 @@
 
 }
 
-.feature-card__cheerfullness::after {
+.feature-card--cheerfullness::after {
   content: "";
   position: absolute;
   width: 52px;
@@ -84,7 +84,7 @@
   }
 }
 
-.feature-card__eco::after {
+.feature-card--eco::after {
   content: "";
   position: absolute;
   width: 52px;
@@ -103,8 +103,7 @@
   }
 }
 
-.feature-card__title {
-  font-family: 'Montserrat', "Arial", sans-serif;
+.feature-card h3 {
   font-style: normal;
   font-weight: 700;
   font-size: 1.125rem;
@@ -133,8 +132,7 @@
   }
 }
 
-.feature-card__text {
-  font-family: 'Montserrat', "Arial", sans-serif;
+.feature-card p {
   font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;

@@ -31,7 +31,6 @@
 }
 
 .catalog__badge {
-  font-family: 'Montserrat', "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 0.75rem;
@@ -50,7 +49,6 @@
 }
 
 .catalog__title {
-  font-family: 'Montserrat', "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.5rem;
@@ -127,7 +125,6 @@
 }
 
 .catalog__item-title {
-  font-family: 'Montserrat', "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -146,7 +143,6 @@
 }
 
 .catalog__item-text {
-  font-family: 'Montserrat', "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -170,7 +166,6 @@
 }
 
 .catalog__item-price {
-  font-family: 'Montserrat', "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -180,7 +175,7 @@
 }
 
 .catalog__item-button-buy {
-  font-family: 'Montserrat', "Arial", sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -195,6 +190,7 @@
   background-size: 20px 16px;
   background-position: top 10px left 20px;
   margin-left: 50px;
+  cursor: pointer;
 
   &:hover,
   &:focus {
